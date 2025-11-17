@@ -18,8 +18,8 @@ from collections.abc import Callable
 import panel as pn
 
 
-# %% py_efficient_payer imports
-from py_efficient_payer.config.loggers import DashLogger
+# %% py_contractor imports
+from py_contractor.config.loggers import DashLogger
 
 
 # %% Module level config

@@ -10,8 +10,8 @@ This module contains all to do with PAYE
 # %% Global imports
 from collections.abc import Callable
 
-# %% py_efficient_payer imports
-from py_efficient_payer.config.config import Config
+# %% py_contractor imports
+from py_contractor.config.config import Config
 
 # %% Module level config
 

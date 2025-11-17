@@ -8,11 +8,13 @@ Created on Tue Nov 11 20:51:52 2025
 # %% Global imports
 from pathlib import Path
 
+import pytest  # For setting TestLogger to ignore state
 
-# %% py_efficient_payer imports
-from py_efficient_payer.config.config import Config
 
-from py_efficient_payer.lib.logging_config import Logger
+# %% py_contractor imports
+from py_contractor.config.config import Config
+
+from py_contractor.lib.logging_config import Logger
 
 
 
@@ -44,6 +46,7 @@ class DashLogger:
        
 
 # -----------------------------------------------------------------------------
+@pytest.mark.skip(reason="This is a logger, not a test class")
 class TestLogger:
     """!
     Logger for tests

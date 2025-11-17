@@ -17,7 +17,7 @@ import os
 import platform
 
 
-# %% py_efficient_payer imports
+# %% py_contractor imports
 
 
 # %% Module level config
@@ -28,7 +28,7 @@ host_drive_map = {
     }
 
 library_dir = Path(importlib.util.find_spec(
-    "py_efficient_payer").submodule_search_locations[0]).parent
+    "py_contractor").submodule_search_locations[0]).parent
 
 
 # %% Functions
@@ -56,16 +56,16 @@ class Config:
         log_drive = os.getenv("GITHUB_WORKSPACE", os.getcwd())
                 
     
-    LOG_DIR = str(Path(f"{log_drive}\\", "Logs", "py_efficient_payer"))
+    LOG_DIR = str(Path(f"{log_drive}\\", "Logs", "py_contractor"))
     Path(LOG_DIR).mkdir(parents=True, exist_ok=True)
     
     TEST_SUPPORTING_DATA = str(Path(library_dir,
-                                    "py_efficient_payer",
+                                    "py_contractor",
                                     "tests",
                                     "supporting_data"))
     
     TEST_REPORTS = str(Path(library_dir,
-                            "py_efficient_payer",
+                            "py_contractor",
                             "tests",
                             "reports"))
 

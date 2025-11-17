@@ -17,15 +17,15 @@ import inspect
 import os
 import pytest  # Also needs pytest-html installed
 
-# %% py_efficient_payer imports
-from py_efficient_payer.config.config import Config
-from py_efficient_payer.config.loggers import TestLogger
+# %% py_contractor imports
+from py_contractor.config.config import Config
+from py_contractor.config.loggers import TestLogger
 
-from py_efficient_payer.tests.lib.test_misc import MiscTest
+from py_contractor.tests.lib.misc_test import MiscTest
 
 
 # %% Unit under test
-from py_efficient_payer.core.paye import Paye
+from py_contractor.core.paye import Paye
 
 # %% Module level config
 
